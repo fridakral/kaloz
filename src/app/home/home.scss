@@ -1,0 +1,24 @@
+.greeting-container{
+  height: 100%;
+  display: flex;
+  overflow:hidden;
+  .image-container{
+    margin-right: 3rem;
+    height:100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    img{
+      max-width: 350px
+    }
+  }
+  .text-content{
+    height:100%;
+    .article{
+      text-align: justify;
+      overflow-y: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+  }
+}

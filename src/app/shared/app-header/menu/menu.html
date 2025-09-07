@@ -1,0 +1,13 @@
+<button mat-button [matMenuTriggerFor]="aboutUsMenu">Községünk</button>
+<mat-menu #aboutUsMenu="matMenu">
+  <button mat-menu-item (click)="navigate('kozsegunk/history')">Káloz község története</button>
+  <button mat-menu-item>Hősi emlékmű</button>
+</mat-menu>
+<button mat-button>Önkormányzat</button>
+<button mat-button>Intézmények</button>
+<button mat-button>Vallás</button>
+<button mat-button>Civil szervezetek</button>
+<button mat-button>Eseménynaptár</button>
+<button mat-button>Galéria</button>
+<button mat-button>Extra</button>
+<button mat-button>Webes térkép</button>
