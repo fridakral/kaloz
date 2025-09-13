@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LocalGov } from './local-gov';
+import { HomeSide } from './home-side';
 
-describe('LocalGov', () => {
-  let component: LocalGov;
-  let fixture: ComponentFixture<LocalGov>;
+describe('HomeSide', () => {
+  let component: HomeSide;
+  let fixture: ComponentFixture<HomeSide>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LocalGov]
+      imports: [HomeSide]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LocalGov);
+    fixture = TestBed.createComponent(HomeSide);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

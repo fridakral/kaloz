@@ -1,33 +1,11 @@
-import {Component, OnInit} from '@angular/core';
-import {MatTab, MatTabGroup} from '@angular/material/tabs';
-import {History} from './history/history';
-import {ActivatedRoute} from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-about-us',
-  imports: [
-    MatTabGroup,
-    MatTab,
-    History
-  ],
+  imports: [],
   templateUrl: './about-us.html',
-  styleUrl: './about-us.scss'
+  styleUrl: './about-us.css'
 })
-export class AboutUs implements OnInit {
+export class AboutUs {
 
-  selectedIndex:number = 0;
-
-  constructor(private route: ActivatedRoute) {}
-
-
-  ngOnInit() {
-    this.route.queryParams.subscribe(params => {
-      const type = params['type'];
-      if (type === '') {
-        this.selectedIndex = 1;
-      } else {
-        this.selectedIndex = 0;
-      }
-    });
-  }
 }
