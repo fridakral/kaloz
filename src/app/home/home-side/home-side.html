@@ -13,35 +13,13 @@
 <div class="card bg-base-300 m-6">
   <div class="card-body">
     <h2 class="justify-text text-center"> Hasznos hírek</h2>
-    <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-      <input type="radio" name="home-side-accordion" checked="checked" />
-      <div class="collapse-title font-semibold">Változtatások az otthonfelújíási programban</div>
-      <div class="collapse-content text-sm">Megjelent a támogatás végleges pályázati kiírása, ami az előzetesen megjelent információkhoz képest rengeteg ponton módosult. <a href="https://www.hasznoshirek.hu/?module=news&action=show&nid=174863" target="_blank" class="text-blue-500 underline">Tovább</a></div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-      <input type="radio" name="home-side-accordion" />
-      <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
-      <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-      <input type="radio" name="home-side-accordion" />
-      <div class="collapse-title font-semibold">How do I update my profile information?</div>
-      <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-      <input type="radio" name="home-side-accordion" checked="checked" />
-      <div class="collapse-title font-semibold">How do I create an account?</div>
-      <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-      <input type="radio" name="home-side-accordion" />
-      <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
-      <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-      <input type="radio" name="home-side-accordion" />
-      <div class="collapse-title font-semibold">How do I update my profile information?</div>
-      <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
-    </div>
+    @for (news of data(); track $index) {
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="home-side-accordion" checked="checked" />
+        <div class="collapse-title font-semibold">{{news.title}}</div>
+        <div class="collapse-content text-sm">{{news.paragraph}} <a href="{{news.url}}" target="_blank" class="text-blue-500 underline">Tovább</a></div>
+      </div>
+    }
+
   </div>
 </div>

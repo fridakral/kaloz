@@ -4,7 +4,7 @@ import {Menu} from './menu/menu';
 @Component({
   selector: 'app-root',
   imports: [
-    Menu
+    Menu,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'
