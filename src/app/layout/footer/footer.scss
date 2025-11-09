@@ -1,0 +1,11 @@
+.footer{
+  min-height: 300px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}

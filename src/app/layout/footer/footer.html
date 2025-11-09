@@ -1,0 +1,29 @@
+<footer class="footer">
+  <h1>Kálozi Önkormányzati Hivatal</h1>
+  <div class="footer-content">
+    <div class="footer-contacts-column">
+      @for (contact of contacts; track contact.data) {
+        <div>
+          <span>
+            <i [class]="contact.icon" style="font-size: 1rem"></i>
+            {{contact.data}}
+          </span>
+        </div>
+      }
+    </div>
+    <div class="footer-opening-hours-column">
+      @for (day of openingHours; track day.data) {
+        <div>
+          <span>
+            {{day.label}}
+            :
+            {{day.data}}
+          </span>
+        </div>
+      }
+    </div>
+  </div>
+  <div class="footer-logo">
+
+  </div>
+</footer>
