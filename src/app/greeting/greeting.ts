@@ -1,14 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {Card} from 'primeng/card';
-import {Button} from 'primeng/button';
-import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-greeting',
   imports: [
     Card,
-    Button,
-    NgOptimizedImage
   ],
   templateUrl: './greeting.html',
   styleUrl: './greeting.scss',

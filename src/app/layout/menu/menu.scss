@@ -1,10 +1,17 @@
 .p-menubar {
   margin: 0;
   border: none transparent;
+  display: flex;
+}
+.p-menubar-root-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
 }
 
-.p-menubar-root-list {
-  gap: 0;
+.p-menubar-submenu{
+  padding: 0;
 }
 
 

@@ -14,6 +14,7 @@ import {Footer} from './footer/footer';
   ],
   templateUrl: './layout.html',
   styleUrl: './layout.scss',
+  standalone: true
 })
 export class Layout {
 

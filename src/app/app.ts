@@ -4,8 +4,9 @@ import {PrimeNG} from 'primeng/config';
 
 @Component({
   selector: 'app-root',
-  imports: [ Layout],
+  imports: [Layout],
   templateUrl: './app.html',
+  standalone: true,
   styleUrl: './app.scss'
 })
 export class App implements OnInit{
